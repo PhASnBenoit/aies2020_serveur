@@ -1,0 +1,173 @@
+#ul_sys li
+{
+	float: left;
+	list-style-type: none;
+}
+
+.case_sys
+{
+	width: 40.55vmax;
+	height: 22.5vmax;
+	overflow: hidden;
+	border-bottom: 1px white solid;
+	border-right: 1px white solid;
+}
+
+.case_sys span span
+{
+	color: white;
+	margin-left: 0.2vmax;
+}
+.case_sys .botinfo
+{
+	margin-top: 1.5vmax;
+	margin-left: 1.5vmax;
+	font-family: aero;
+}
+.case_sys .botinfo span
+{
+	margin-left: 1.5vmax;
+    
+}
+.case_sys h2
+{
+	color: white;
+	text-align: center;
+	font-family: aero;
+	margin-top: 0.5vmax;
+	font-size: 1.5vmax;
+}
+
+.case_sys h3
+{
+	color: rgb(70,70,70);
+	text-align: left;
+	margin-top: 1vmax;
+	text-align: center;
+	font-family: aero;
+}
+.case_sys h3 span
+{
+	color: white;
+}
+
+.color_state
+{
+	width: 13vmax;
+	height: 12vmax;
+	margin: auto;
+	margin-top: 1vmax;
+}
+.color_state img
+{
+	width: 13vmax;
+}
+.color_state div
+{
+	width: 12vmax;
+	height: 7vmax;
+	border: 1px red solid;
+	margin-top: -10.9vmax;
+	background-color: white;
+}
+.color_state span
+{
+	color: white;
+	text-shadow: 0px 1px 2px black;
+	display: inline-block;
+	font-size: 1.5vmax;
+	margin-left: 4.1vmax;
+	margin-top: 2.8vmax;
+}
+
+.mode_allumage
+{
+	float: right;
+	margin-top: -10vmax;
+	margin-right: 5vmax;
+	width: 7vmax;
+	height: 5vmax;
+}
+.mode_allumage span
+{
+	color: white;
+	font-family: aero;
+}
+.mode_allumage #decale
+{
+	margin-left: 1.1vmax;
+}
+
+.white
+{
+	background-color: white !important;
+}
+
+.black
+{
+	background-color: black !important;
+}
+
+.temp
+{
+	color: white;
+	font-size: 1.3vmax;
+	float: left;
+	margin-top: 5vmax;
+	margin-left: 6vmax;
+}
+
+
+#pourcentColor{
+    background:rgb(0,255,0);
+    border:1px solid;
+    width :17px;
+    height:17px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#pourcent{
+
+   display: inline-block;
+   margin-left: 2%;
+    
+}
+
+#red{
+
+    background: red;
+    border:1px solid;
+    width :17px;
+    height:17px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#green{
+
+    background: limegreen;
+    border:1px solid;
+    width :17px;
+    height:17px;
+    display: inline-block;
+    vertical-align: top;
+}
+#orange{
+
+    background: orange;
+    border:1px solid;
+    width :17px;
+    height:17px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#fumee{
+    background: magenta;
+    border:1px solid;
+    width :17px;
+    height:17px;
+    display: inline-block;
+    vertical-align: top;
+}

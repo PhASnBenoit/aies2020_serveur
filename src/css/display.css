@@ -1,0 +1,392 @@
+
+		/* ---------------------------- MAIN DISPLAY --------------------------- */
+
+#main_display
+{
+	width: 81.45vmax;
+	height: 47.6vmax;
+}
+
+#main_display .state_block
+{
+	width: 81.45vmax;
+	height: 15.85vmax;
+}
+#main_display .state_block:hover .bt_action
+{
+	opacity: 1;
+}	
+
+#main_display #actu
+{
+	border-bottom: 1px silver dashed;
+}
+
+#main_display #diff
+{
+	border-bottom: 1px silver dashed;
+}
+
+#main_display #arch
+{
+
+}
+
+
+#main_display .action_block
+{
+	width: 18.43vmax;
+	height: 15.85vmax;
+	padding-left: 1vmax;
+	float: right;
+}
+
+#main_display .content_block
+{
+	width: 62vmax;
+	height: 15.85vmax;
+	float: left;
+}
+
+#main_display .content_block h1
+{
+	text-shadow: 0px 2px rgba(0,0,0, 0.3);
+	text-align: center;
+	font-size: 1.3vmax;
+	margin-top: 0.4vmax;
+	font-family: aero;
+	letter-spacing: 0.08vmax;
+}
+
+#main_display #actu h1
+{
+	color: rgb(104,189,96);
+}
+
+#main_display #diff h1
+{
+	color: rgb(255,255,75);
+}
+
+#main_display #arch h1
+{
+	color: rgb(184,45,49);
+}
+
+
+#main_display .data_container
+{
+	width: 58vmax;
+	height: 12vmax;
+	background-color: rgb(240,240,240);
+	border: 3px silver inset;
+	margin: auto;
+	margin-top: 0.5vmax;
+	overflow: auto;
+}
+
+.bt_action
+{
+	opacity: 0.3;
+}
+
+.bt_action:hover
+{
+	border: 1px grey solid;
+}
+
+
+#main_display .data_container table
+{
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 1.05vmax;
+	cursor: pointer;
+}
+#main_display .data_container table th
+{
+	text-align: center;
+	color: white;
+}
+#main_display #actu div div table th
+{
+	background-color: rgb(100,200,100);
+}
+#main_display #diff div div table th
+{
+	background-color: rgb(215,215,0);
+}
+#main_display #arch div div table th
+{
+	background-color: rgb(255,30,20);
+}
+#main_display .data_container table tr td
+{
+	text-align: center;
+	padding-top: 0.15vmax;
+	padding-bottom: 0.15vmax;
+	border-bottom: 1px silver solid;
+	border-right: 1px silver dashed;
+}
+
+#main_display .data_container table tr:hover
+{
+	background-color: rgba(150,150,150,0.3);
+}
+
+#main_display .data_container table tr:hover #img img
+{
+	display: inline-block;
+}
+
+#main_display .data_container #img:hover
+{
+	background-color: rgb(0,190,255);
+}
+
+#main_display .data_container #img img
+{
+	display: none;
+	width: 1.3vmax;
+	margin-bottom: -0.4vmax;
+}
+
+		/* ------------------------ ADD_DISPLAY ---------------------------- */
+
+#add_display
+{
+	width: 81.45vmax;
+	min-height: 47.6vmax;
+}
+
+#add_display h1
+{
+	color: white;
+	text-decoration: underline;
+	font-family: aero;
+	text-align: center;
+	padding-top: 1vmax;
+	width: 81.45vmax;
+	height: 4vmax;
+	background-image: linear-gradient(to top, rgb(101,123,131), rgb(0,43,54));
+	position: fixed;
+}
+
+#add_display #content_theme
+{
+	display: inline-block;
+	margin-top: 6vmax;
+	margin-left: 1vmax;
+	padding-bottom: 1.5vmax;
+	width: 79vmax;
+	min-height: 40vmax;
+}
+
+#add_display #content_theme ul li
+{
+	list-style-type: none;
+	width: 20vmax;
+	height: 12.6vmax;
+	float: left;
+	margin-left: 5vmax;
+	margin-top: 1vmax;
+}
+
+#add_display #content_theme ul li h3
+{
+	color: white;
+	margin-top: -7vmax;
+	text-align: center;
+	font-family: aero;
+	font-size: 1.3vmax;
+}
+
+#add_display #content_theme img
+{
+	width: 20vmax;
+}
+
+#add_display #content_theme li:hover img
+{
+	box-shadow: 0px 0px 15px 5px white;
+}
+
+
+
+
+/* --------------------- ArchToActuDiff ----------------------- */
+
+#ArchToActuDiff_display
+{
+	width: 82.5vmax;
+	height: 100%;
+}
+
+#ArchToActuDiff_display #center
+{
+	display: inline-block;
+	width: 35vmax;
+	height: 30.5vmax;
+	margin-left: 23vmax;
+	margin-top: 8vmax;
+	background-color: rgba(255,255,255,0.8);
+	box-shadow: 0px 0px 3px 3px white;
+}
+
+#ArchToActuDiff_display #deb
+{
+	width: 35vmax;
+	height: 13.85vmax;
+	border-bottom: 2px white solid;
+}
+#ArchToActuDiff_display #fin
+{
+	width: 35vmax;
+	height: 13.85vmax;
+}
+
+#ArchToActuDiff_display #deb h1, #ArchToActuDiff_display #fin h1
+{
+	height: 2.3vmax;
+	background-color: white;
+	text-align: center;
+	color: grey;
+	font-size: 1.8vmax;
+}
+
+#ArchToActuDiff_display input[type=text]
+{
+	width: 1.5vmax;
+	height: 1.5vmax;
+	font-size: 1.05vmax;
+	font-family: aero;
+	text-align: center;
+}
+
+#ArchToActuDiff_display input[type=radio]
+{
+	margin-left: 5vmax;
+	margin-top: 1vmax;
+}
+
+#ArchToActuDiff_display button
+{
+	width: 15vmax;
+	margin-left: 10vmax;
+}
+
+#ArchToActuDiff_display #day_deb, #ArchToActuDiff_display #day_fin
+{
+	margin-left: 6vmax;
+	margin-top: 0.5vmax;
+	width: 7vmax;
+}
+
+#ArchToActuDiff_display span
+{
+	font-size: 1vmax;
+}
+
+#deb_diff, #fin_diff
+{
+	display: none;
+}
+
+
+
+/* DEBUT calendrier JS : jsSimpleDatePickr */
+/* conteneur calendrier */
+.calendarWrap{
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    width: 13.4vmax;
+    margin-top: 0.4vmax;
+    margin-left: 2vmax;
+    padding: 0.3vmax 0.6vmax 0.6vmax 0.6vmax;
+    background-color: #2e373f;
+    /*background-color: rgba(46, 55, 63, 0.95);*/
+    border-radius: 0.6vmax;
+    -moz-box-shadow: 0 0 10px #555;
+    -webkit-box-shadow: 0 0 10px #555;
+    box-shadow: 0 0 10px #555;
+    font-size: 0.8vmax;
+}
+/* bouton d'affichage*/
+#calendarMain > input, #calendarMain2 > input{
+    display: block;
+    width: 100px;
+    height: 22px;
+    padding-top: 2px;
+    background-color: #2e373f;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+#calendarMain > input:hover, #calendarMain2 > input:hover{
+    background-color: #2673cb;
+}
+/* navigation dans le calendrier */
+.calendarWrap ul{
+    margin: 0.4vmax 0 0.8vmax 0;
+    padding: 0;
+}
+.calendarWrap li{
+    margin: 0;
+    padding: 0;
+    width: 1.6vmax;
+    display: inline-block;
+    *display: inline;
+}
+.calendarWrap li.calendarTitle{
+    width: 10.1vmax;
+    color: #ccc;
+    text-align: center;
+}
+.calendarWrap li input{
+    width: 1.3vmax !important;
+    background-color: #5d6f7f;
+    border: none;
+    color: #fff;
+}
+.calendarWrap li input:hover{
+    background-color: #6f8598;
+}
+/* calendrier */
+.jsCalendar{
+    color: #fff;
+    border-collapse: collapse;
+}
+.jsCalendar th{
+    color: #8ba7bf;
+    font-size: 1vmax;
+    font-weight: normal;
+    text-align: center;
+}
+.jsCalendar td{
+    padding: 0;
+    border: none;
+}
+.jsCalendar a{
+    display: block;
+    width: 1.9vmax;
+    padding: 0.1vmax 0 0.1vmax 0;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+.jsCalendar .day:hover a{
+    background-color: #2673cb;
+    border-color: #2673cb;
+}
+.jsCalendar .selectedDay a{
+    background-color: #c44d38;
+    border-color: #c44d38;
+}
+#calendarWrap0
+{
+	display: none;
+	background-color: #2e373f;
+}
+/* FIN calendrier JS : jsSimpleDatePickr */

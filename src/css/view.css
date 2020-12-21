@@ -1,0 +1,46 @@
+#content_zone
+{
+	width: 82.5vmax;
+	height: 87%;
+}
+
+#select_zone
+{
+	width: 82.5vmax;
+	height: 13%;
+}
+
+#select_zone button
+{
+	margin-top: 1.5vmax;
+}
+
+#select_zone #actu
+{
+	box-shadow: 0px 0px 4px 2px green;
+}
+
+#content_zone #nozone
+{
+	padding-top: 16vmax;
+	text-align: center;
+	font-size: 1.9vmax;
+	letter-spacing: 0.07vmax;
+	font-family: aero;
+	color: white;
+}
+
+#timer
+{
+	position: absolute;
+	left: 13.5vmax;
+	top: 13.6vmax;
+	font-family: aero;
+	color: white;
+	font-size: 2.5vmax;
+}
+
+#timer span
+{
+	font-size: 1.5vmax;
+}

@@ -1,0 +1,219 @@
+/*
+ * v1.0 by PhA 2019/01/29
+ */
+
+
+.blue
+{
+	background-color: rgb(43,57,105);
+	color: white;
+}
+
+.blue h1
+{
+	background-image: linear-gradient(to right, rgb(3,9,29), rgb(9,32,65));
+}
+
+
+.lightskyblue
+{
+	background-color: lightskyblue;
+	color: black;
+}
+
+.lightskyblue h1
+{
+	background-image: linear-gradient(to right, rgb(70,120,190), rgb(100,190,210));
+}
+
+.gainsboro
+{
+	background-color: #DCDCDC;
+	color: black;
+}
+
+.gainsboro h1
+{
+	background-image: linear-gradient(to right, rgb(160,160,160), rgb(200,200,200));
+}
+
+.orange
+{
+	background-color: rgb(255,154,0);
+	color: white;
+}
+
+.orange h1
+{
+	background-image: linear-gradient(to right, rgb(195,94,0), rgb(255,164,0));
+}
+.indianred
+{
+	background-color: #CD5C5C;
+	color: white;
+
+}
+.indianred h1
+{
+	background-image: linear-gradient(to right, rgb(150,50,50), rgb(180,70,70));
+}
+.darkolivegreen
+{
+	background-color: #556B2F;
+	color : white;
+}
+.darkolivegreen h1
+{
+	background-image: linear-gradient(to right, rgb(40,50,20), rgb(65,90,47));
+}
+.darkslategrey
+{
+	background-color: #2F4F4F;
+	color : white;
+}
+.darkslategrey h1
+{
+	background-image: linear-gradient(to right, rgb(10,30,30), rgb(37,59,59));
+}
+.lightsteelblue
+{
+	background-color: #B0C4DE;
+	color: white;
+}
+.lightsteelblue h1
+{
+	background-image: linear-gradient(to right, rgb(100,140,170), rgb(146,176,202));
+}
+.pink
+{
+	background-color: #FFE4E1;
+}
+.pink h1
+{
+	background-image: linear-gradient(to right, rgb(200,180,180), rgb(235,208,205));
+}
+.lemonchiffon
+{
+	background-color: #FFFACD;
+}
+.lemonchiffon h1
+{
+	background-image: linear-gradient(to right, rgb(200,200,150), rgb(225,220,185));
+}
+
+
+
+
+
+/*
+.blue
+{
+	background-color: rgb(43,57,105);
+	color: white;
+}
+
+.blue h1
+{
+	background-image: linear-gradient(to right, rgb(3,9,29), rgb(9,32,65));
+}
+
+
+.white
+{
+	background-color: white;
+	color: black;
+}
+
+.white h1
+{
+	background-image: linear-gradient(to right, rgb(210,210,210), rgb(255,255,255));
+}
+
+.green
+{
+	background-color: rgb(55,152,16);
+	color: white;
+}
+
+.green h1
+{
+	background-image: linear-gradient(to right, rgb(55,10,16), rgb(55,152,16));
+}
+.orange
+{
+	background-color: rgb(255,154,0);
+	color: white;
+}
+
+.orange h1
+{
+	background-image: linear-gradient(to right, rgb(195,94,0), rgb(255,164,0));
+}
+
+.red
+{
+	background-color: rgb(180,0,0);
+	color: white;
+}
+
+.red h1
+{
+	background-image: linear-gradient(to right, rgb(100,0,0), rgb(255,0,0));
+}
+
+.pink
+{
+	background-color: rgb(255,182,193);
+	color: white;
+}
+
+.pink h1
+{
+	background-image: linear-gradient(to right, rgb(100,0,0), rgb(255,182,193));
+}
+
+.cyan
+{
+	background-color: rgb(0,255,255);
+	color: black;
+}
+
+.cyan h1
+{
+	background-image: linear-gradient(to right, rgb(0,100,100), rgb(0,255,255));
+}
+
+
+.yellow
+{
+	background-color: rgb(255,255,0);
+	color: black;
+}
+
+.yellow h1
+{
+	background-image: linear-gradient(to right, rgb(100,100,0), rgb(255,255,0));
+}
+
+.violet
+{
+	background-color: rgb(244,218,255);
+	color: black;
+}
+
+.violet h1
+{
+	background-image: linear-gradient(to right, rgb(100,70,255), rgb(244,218,255));
+}
+
+.vertClair
+{
+	background-color: rgb(220,255,220);
+	color: black;
+}
+
+.vertClair h1
+{
+	background-image: linear-gradient(to right, rgb(150,255,150), rgb(220,255,220));
+}
+*/

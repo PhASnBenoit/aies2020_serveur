@@ -1,0 +1,116 @@
+<?php if(isset($_GET['money']) && isset($_GET['dif']))
+{
+  $only = array( '0' => 'tf',
+                 '1' => 'f',
+                 '2' => 'm',
+                 '3' => 'd',
+                 '4' => 'td');
+  if(!in_array($_GET['dif'], $only))
+  {
+    header('Location: ./nbligne.php');
+    exit();
+  }
+  if($_GET['money'] > 20 OR $_GET['money'] < 1)
+  {
+    header('Location: ./nbligne.php');
+    exit();
+  }
+}
+?>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Nbligne</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="src/css/nbligne.css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <form method="GET" action="">
+        <input name="money" id="money" <?php if(isset($_GET['money']) && isset($_GET['dif'])){echo "value=\"" . $_GET['money'] . "\"";}else{echo "value=\"€/H\"";} ?> value="€/H" onfocus="if(this.value=='€/H'){this.value='';this.style.color = 'black';}" onblur="if(this.value==''){this.value = '€/H';this.style.color = 'silver';}" />
+        <select name="dif" id="dif">
+          <option <?php if(isset($_GET['money']) && isset($_GET['dif'])){if($_GET['dif'] == "tf")echo "selected";} ?> value="tf">Trés facile</option>
+          <option <?php if(isset($_GET['money']) && isset($_GET['dif'])){if($_GET['dif'] == "f")echo "selected";} ?> value="f">Facile</option>
+          <option <?php if(isset($_GET['money']) && isset($_GET['dif'])){if($_GET['dif'] == "m")echo "selected";} ?> value="m">Moyen</option>
+          <option <?php if(isset($_GET['money']) && isset($_GET['dif'])){if($_GET['dif'] == "d"){echo "selected";}}else{echo "selected";} ?> value="d">Difficile</option>
+          <option <?php if(isset($_GET['money']) && isset($_GET['dif'])){if($_GET['dif'] == "td")echo "selected";} ?> value="td">Trés Difficile</option>
+        </select>
+        <button id="submit">Rendu</button>
+      </form>
+    </div>
+    <div id="info">
+      <div id="hidden"><?php 
+        $tab = array();
+        function counter($dir)
+        {
+           $handle = opendir($dir);
+
+           $nbLines = 0;
+           
+           while( ($file = readdir($handle)) != false )
+           {
+              if( $file != "." && $file != ".." && $file != "_file-manager" && $file != "nbligne.php" && $file != "phpMyAdmin")
+              {
+                 if( !is_dir($dir."/".$file) )
+                 {
+                    if( preg_match("#\.(js|php|html|txt|css)$#", $file) )
+                    {
+                        $nb = count(file($dir."/".$file));
+                        echo $dir,"/",$file," => <strong>",$nb,"</strong><br />";
+                        $nbLines += $nb;
+                    }
+                 }
+                 else
+                 {
+                    $nbLines += counter($dir."/".$file);
+                 }
+              }
+            }
+           closedir($handle);
+           
+           return $nbLines;
+        }
+        $dir = ".";
+        $nb = counter($dir); ?>
+        </div>
+        <p>
+          <?php
+          if(isset($_GET['money']) && isset($_GET['dif']))
+          {
+            $timeperline = 0;
+            switch($_GET['dif'])
+            {
+              case "tf":
+                $timeperline = 35;
+              break;
+              case "f":
+                $timeperline = 50;
+              break;
+              case "m":
+                $timeperline = 70;
+              break;
+              case "d":
+                $timeperline = 105;
+              break;
+              case "td":
+                $timeperline = 135;
+              break;
+
+            }
+
+            print("Nombre de lignes : ".$nb." .<br> Temp de travail : " . round(($nb * $timeperline / 3600), 0) . " heures .<br> Valeur du site : " . round(($nb * $timeperline / 3600 * $_GET['money']), 0 ) . " euros .");
+          }
+        ?>
+        </p>
+    </div>
+    <div id="file">
+    </div>
+    <script>
+      document.getElementById('file').innerHTML = document.getElementById('hidden').innerHTML;
+    </script>
+  </body>
+
+
+
+</html>

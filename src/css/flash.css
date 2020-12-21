@@ -1,0 +1,18 @@
+textarea
+{
+	margin-top: 15vmax;
+	margin-left: 17vmax;
+	padding: 0.7vmax;
+	width: 45vmax;
+	height: 3vmax;
+	font-size: 1.2vmax;
+	background-color: white;
+	color: rgb(255,20,0);
+	border: 3px silver solid;
+}
+
+button
+{
+	margin-left: 36.5vmax;
+	margin-top: 2vmax;
+}

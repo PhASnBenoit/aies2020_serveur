@@ -1,0 +1,134 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+html
+{
+	height: 100%;
+}  
+
+body
+{
+	font-family: calibri;
+	height: 100%;
+	overflow-y: hidden; 
+	overflow-x: hidden;
+}
+button
+{
+	height: 2.2vmax;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: rgb(80,80,80);
+	font-family: calibri;
+	font-size: 1.1vmax;
+	font-weight: 200;
+	padding: 0.35vmax;
+}
+
+@font-face
+{
+	font-family: 'aero';
+	src: url('../font/aero/Aero_Matics_Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+.top_notif
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 82.47vmax;
+	height: 1.5vmax;
+	padding-top: 0.2vmax;
+	font-family: aero;
+	font-size: 1vmax;
+}
+
+.top_notif p
+{
+	margin-left: 0.3vmax;
+	color: white;
+}
+
+#top_notif_bad
+{
+	background-color: rgba(255,0,0,0.7);
+		-webkit-animation: top_notif2 0.7s 1;
+	animation: top_notif2 0.7s 1;
+}
+#top_notif_good
+{
+	top: -1.7vmax;
+	background-color: rgba(0,255,0,0.7);
+	-webkit-animation: top_notif 7s 1;
+	animation: top_notif 7s 1;
+}
+
+@-webkit-keyframes top_notif
+{
+	0%
+	{
+		top: -1.7vmax;
+	}
+	15%
+	{
+		top: 0;
+	}
+	85%
+	{
+		top: 0;
+	}
+	100%
+	{
+		top: -1.7vmax;
+	}
+}
+@keyframes top_notif
+{
+	0%
+	{
+		top: -1.7vmax;
+	}
+	15%
+	{
+		top: 0;
+	}
+	85%
+	{
+		top: 0;
+	}
+	100%
+	{
+		top: -1.7vmax;
+	}
+}
+
+@-webkit-keyframes top_notif2
+{
+	0%
+	{
+		top: -1.7vmax;
+	}
+	100%
+	{
+		top: 0vmax;
+	}
+}
+@keyframes top_notif2
+{
+	0%
+	{
+		top: -1.7vmax;
+	}
+	100%
+	{
+		top: 0vmax;
+	}
+}
