@@ -80,8 +80,6 @@ $date_create = "" . date('Y') . date('m') . date('d') . date('H') . date('i');
 		$file = fopen($path . $newfile, 'a');
 		fputs($file, $content);
 
-		$date_create = "" . date('Y') . date('m') . date('d') . date('H') . date('i');
-
 		if ($_POST["priority"]=="yes")
                     $req = $db->query("UPDATE slidezone SET priority='no'");
 
